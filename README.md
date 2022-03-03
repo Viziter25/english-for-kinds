@@ -1,1 +1,1 @@
-# english-for-kinds
+https://viziter25.github.io/english-for-kinds/
