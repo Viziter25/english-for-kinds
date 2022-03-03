@@ -15,6 +15,10 @@ body {
 .logo {
     display: block;
     font-family: 'Lobster';
+    font-size: 4rem;
+    color: #4a0b74;
+    ;
+    
 }
 
 .main-container {
@@ -81,10 +85,8 @@ a {
 
 .card-image img {
     width: 240px;
-    height: 200px;
     position: absolute;
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
+    
 }
 
 .card-title {
@@ -297,3 +299,73 @@ ul {
     transform: rotate(-45deg);
     bottom: 0px;
 }
+
+
+
+
+
+
+/* CATEGORY SPACE */
+
+.container-cards {
+    
+}
+.card-face {
+    
+    transition: 0.5s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.card-space-image {
+    position: relative;
+    height: 180px;
+    margin-bottom: 10px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    
+}
+
+.card-space-image img {
+    width: 180px;
+    position: absolute;
+    left: 30px;
+    top: 7px;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.card-space-title {
+     font-size: 1.5rem;
+     text-transform: uppercase;
+     font-family: 'Lobster';
+     letter-spacing: 0.15em;
+     text-align: center;
+     margin-bottom: 8px;
+     color: #30296f;
+     line-height: 2.8rem;
+}
+
+.img-refresh {
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+
+.card-back{
+    /* transform: rotateY(180deg); */
+    display: none;
+}
+
+ /* .card-face:hover {
+     transform: rotateY(180deg);
+ }
+
+ .card-back:hover {
+     transform: rotateY(360deg);
+ } */
