@@ -9,242 +9,1536 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&display=swap" rel="stylesheet">
     <title>English for kids</title>
 </head>
-<body>
+    <body>
 
-    <header class="header">
-        <nav class="navigation">
-            <button class="navigation-burger" type="button">
-                <span class="burger-item"></span>
-            </button>
-            <ul class="menu">
-                <li class="menu-item">
-                    <a href="#" class="menu-link">main</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="menu-link">space</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="menu-link">food</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="menu-link">animals</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="menu-link">body</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="menu-link">activities</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="menu-link">colors</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="menu-link">family</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="menu-link">home</a>
-                </li>
-            </ul>
-        </nav>
-        
-        <h1 class="logo">English for kids</h1>
-        <div class="toggle">
-            <input type="checkbox" id="switch-input">
-            <label class="toggle-switch" for="switch-input">
-                <span class="switch-handle"></span>
-                <span class="switch-train">train</span>
-                <span class="switch-play">play</span>
-            </label>
-        </div>
-    </header>
-
-    <main class="main-container">
-        <div class="conteiner">
-
-            <div class="container-cards">
-                <a href="">
-                    <div class="card-image card-image-space" >
-                        <img src="./img/main page/space.png" alt="Space">
-                    </div>
-                    <div class="card-title">Space</div>
-                </a>
-            </div>
-
-            <div class="container-cards">
-                <a href="">
-                    <div class="card-image card-image-food">
-                        <img src="/img/main page/food.png" alt="Food">
-                    </div>
-                    <div class="card-title">Food</div>
-                </a>
-            </div>
-
-            <div class="container-cards">
-                <a href="">
-                    <div class="card-image card-image-animals">
-                        <img src="/img/main page/animals.png" alt="Animals">
-                    </div>
-                    <div class="card-title">Animals</div>
-                </a>
-            </div>
-
-            <div class="container-cards">
-                <a href="">
-                    <div class="card-image card-image-body">
-                        <img src="/img/main page/body.png" alt="Body">
-                    </div>
-                    <div class="card-title">Body</div>
-                </a>
-            </div>
-
-            <div class="container-cards">
-                <a href="">
-                    <div class="card-image card-image-activitie">
-                        <img src="/img/main page/activities.png" alt="Activitie">
-                    </div>
-                    <div class="card-title">Activitie</div>
-                </a>
-            </div>
-
-            <div class="container-cards">
-                <a href="">
-                    <div class="card-image card-image-colors">
-                        <img src="/img/main page/colors.png" alt="Colors">
-                    </div>
-                    <div class="card-title">Colors</div>
-                </a>
-            </div>
-
-            <div class="container-cards">
-                <a href="">
-                    <div class="card-image card-image-family">
-                        <img src="/img/main page/family.png" alt="Family">
-                    </div>
-                    <div class="card-title">Family</div>
-                </a>
-            </div>
-
-            <div class="container-cards">
-                <a href="">
-                    <div class="card-image card-image-home">
-                        <img src="/img/main page/home.png" alt="Home">
-                    </div>
-                    <div class="card-title">Home</div>
-                </a>
-            </div>
+        <header class="header">
+            <nav class="navigation">
+                <button class="navigation-burger" type="button">
+                    <span class="burger-item"></span>
+                </button>
+                <ul class="menu">
+                    <li class="menu-item" data-menu='main'>
+                        <a href="#" class="menu-link">main</a>
+                    </li>
+                    <li class="menu-item" data-menu='space'>
+                        <a href="#" class="menu-link">space</a>
+                    </li>
+                    <li class="menu-item" data-menu='food'>
+                        <a href="#" class="menu-link">food</a>
+                    </li>
+                    <li class="menu-item" data-menu='animals'>
+                        <a href="#" class="menu-link">animals</a>
+                    </li>
+                    <li class="menu-item" data-menu='body'>
+                        <a href="#" class="menu-link">body</a>
+                    </li>
+                    <li class="menu-item" data-menu='activities'>
+                        <a href="#" class="menu-link">activities</a>
+                    </li>
+                    <li class="menu-item" data-menu='colors'>
+                        <a href="#" class="menu-link">colors</a>
+                    </li>
+                    <li class="menu-item" data-menu='family'>
+                        <a href="#" class="menu-link">family</a>
+                    </li>
+                    <li class="menu-item" data-menu='home'>
+                        <a href="#" class="menu-link">home</a>
+                    </li>
+                </ul>
+            </nav>
             
+            <h1 class="logo">English for kids</h1>
+            <div class="toggle">
+                <input type="checkbox" id="switch-input">
+                <label class="toggle-switch" for="switch-input">
+                    <span class="switch-handle"></span>
+                    <span class="switch-train">train</span>
+                    <span class="switch-play">play</span>
+                </label>
+            </div>
+        </header>
 
-        </div>
-    </main>
+        <main class="main-container" id="main">
+            <div class="conteiner">
+                <div class="wrapper-main">
+                    <div class="container-cards" data-id='space'>
+                        <a href="#">
+                            <div class="card-image card-image-space" >
+                                <img src="./img/main page/space.png" alt="Space">
+                            </div>
+                            <div class="card-title">Space</div>
+                        </a>
+                    </div>
 
-    
+                    <div class="container-cards"  data-id='food'>
+                        <a class="card-link" href="#">
+                            <div class="card-image card-image-food">
+                                <img src="/img/main page/food.png" alt="Food">
+                            </div>
+                            <div class="card-title">Food</div>
+                        </a>
+                    </div>
 
+                    <div class="container-cards"  data-id='animals'>
+                        <a class="card-link" href="">
+                            <div class="card-image card-image-animals">
+                                <img src="/img/main page/animals.png" alt="Animals">
+                            </div>
+                            <div class="card-title">Animals</div>
+                        </a>
+                    </div>
 
+                    <div class="container-cards"  data-id='body'>
+                        <a href="">
+                            <div class="card-image card-image-body">
+                                <img src="/img/main page/body.png" alt="Body">
+                            </div>
+                            <div class="card-title">Body</div>
+                        </a>
+                    </div>
 
-    <main class="main-container">
-        <div class="conteiner">
+                    <div class="container-cards"  data-id='activities'>
+                        <a href="">
+                            <div class="card-image card-image-activitie">
+                                <img src="/img/main page/activities.png" alt="Activitie">
+                            </div>
+                            <div class="card-title">Activitie</div>
+                        </a>
+                    </div>
 
-            <div class="container-cards">
-                <div class="card">
-                    <div class="card-face">
-                        <div class="card-space-image" >
-                            <img src="./img/space/rocket.png" alt="Rocket">
+                    <div class="container-cards"  data-id='colors'>
+                        <a href="">
+                            <div class="card-image card-image-colors">
+                                <img src="/img/main page/colors.png" alt="Colors">
+                            </div>
+                            <div class="card-title">Colors</div>
+                        </a>
+                    </div>
+
+                    <div class="container-cards"  data-id='family'>
+                        <a href="">
+                            <div class="card-image card-image-family">
+                                <img src="/img/main page/family.png" alt="Family">
+                            </div>
+                            <div class="card-title">Family</div>
+                        </a>
+                    </div>
+
+                    <div class="container-cards"  data-id='home'>
+                        <a href="">
+                            <div class="card-image card-image-home">
+                                <img src="/img/main page/home.png" alt="Home">
+                            </div>
+                            <div class="card-title">Home</div>
+                        </a>
+                    </div>
+                </div>
+                
+                
+
+            </div>
+        </main>
+    <!-- space -->
+        <main class="main-container" id="space">
+            <div class="conteiner">
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/space/rocket.png" alt="rocket">
+                            </div>
+                            <div class="card-info">
+                                <a href="#"></a>
+                                <img class="img-sound" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Rocket</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
                         </div>
-                        <div class="card-info">
-                            <img class="img-refresh" src="./img/sound.png" alt="">
-                            <div class="card-space-title">Rocket</div>
-                            <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt=""></a>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/space/rocket.png" alt="rocket">
+                            </div>
+                            <div class="card-space-title">Ракета</div>
                         </div>
                     </div>
-                    <div class="card-back">
-                        <div class="card-space-image" >
-                            <img src="./img/space/rocket.png" alt="Rocket">
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/space/moon.png" alt="Moon">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Moon</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
                         </div>
-                        <div class="card-space-title">Ракета</div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/space/moon.png" alt="Луна">
+                            </div>
+                            <div class="card-space-title">Луна</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/space/astronaut.png" alt="astronaut">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Astronaut</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/space/astronaut.png" alt="Astronaut">
+                            </div>
+                            <div class="card-space-title">Астронафт</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/space/alien.png" alt="alien">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Alien</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/space/alien.png" alt="Alien">
+                            </div>
+                            <div class="card-space-title">Инопланетянин</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/space/saturn.png" alt="Planet">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Planet</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/space/saturn.png" alt="Planet">
+                            </div>
+                            <div class="card-space-title">Планета</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/space/sun.png" alt="Sun">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Sun</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/space/sun.png" alt="Sun">
+                            </div>
+                            <div class="card-space-title">Солнце</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/space/telescope.png" alt="telescope">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Telescope</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/space/telescope.png" alt="telescope">
+                            </div>
+                            <div class="card-space-title">Телескоп</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/space/worldwide.png" alt="Earth">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Earth</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/space/worldwide.png" alt="Earth">
+                            </div>
+                            <div class="card-space-title">Земля</div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </main>
 
-            <div class="container-cards">
-                
-                    <div class="card-image card-image-food">
-                        <img src="/img/main page/food.png" alt="Food">
+    <!-- ------FOOD -->
+
+        <main class="main-container" id="food">
+            <div class="conteiner">
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Food/apple.png" alt="apple">
+                            </div>
+                            <div class="card-info">
+                                <a href="#"></a>
+                                <img class="img-sound" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Apple</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Food/apple.png" alt="apple">
+                            </div>
+                            <div class="card-space-title">Яблоко</div>
+                        </div>
                     </div>
-                    <div class="card-title">Food</div>
-                
-            </div>
+                </div>
 
-            <div class="container-cards">
-                
-                    <div class="card-image card-image-animals">
-                        <img src="/img/main page/animals.png" alt="Animals">
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Food/banana.png" alt="banana">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Banana</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Food/banana.png"  alt="banana">
+                            </div>
+                            <div class="card-space-title">Банан</div>
+                        </div>
                     </div>
-                    <div class="card-title">Animals</div>
-                
-            </div>
+                </div>
 
-            <div class="container-cards">
-                
-                    <div class="card-image card-image-body">
-                        <img src="/img/main page/body.png" alt="Body">
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Food/bread.png" alt="bread">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Bread</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Food/bread.png" alt="bread">
+                            </div>
+                            <div class="card-space-title">Хлеб</div>
+                        </div>
                     </div>
-                    <div class="card-title">Body</div>
-                
-            </div>
+                </div>
 
-            <div class="container-cards">
-                
-                    <div class="card-image card-image-activitie">
-                        <img src="/img/main page/activities.png" alt="Activitie">
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Food/cheese.png" alt="cheese">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Cheese</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Food/cheese.png" alt="cheese">
+                            </div>
+                            <div class="card-space-title">Cыр</div>
+                        </div>
                     </div>
-                    <div class="card-title">Activitie</div>
-                
-            </div>
+                </div>
 
-            <div class="container-cards">
-                
-                    <div class="card-image card-image-colors">
-                        <img src="/img/main page/colors.png" alt="Colors">
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Food/egg.png" alt="egg">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Egg</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Food/egg.png" alt="egg">
+                            </div>
+                            <div class="card-space-title">Яйцо</div>
+                        </div>
                     </div>
-                    <div class="card-title">Colors</div>
-                
-            </div>
+                </div>
 
-            <div class="container-cards">
-                
-                    <div class="card-image card-image-family">
-                        <img src="/img/main page/family.png" alt="Family">
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Food/fish.png" alt="fish">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Fish</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Food/fish.png" alt="fish">
+                            </div>
+                            <div class="card-space-title">Рыба</div>
+                        </div>
                     </div>
-                    <div class="card-title">Family</div>
-                
-            </div>
+                </div>
 
-            <div class="container-cards">
-                
-                    <div class="card-image card-image-home">
-                        <img src="/img/main page/home.png" alt="Home">
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Food/orange.png" alt="orange">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Orange</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Food/orange.png" alt="orange">
+                            </div>
+                            <div class="card-space-title">Апельсин</div>
+                        </div>
                     </div>
-                    <div class="card-title">Home</div>
-                
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Food/tomato.png" alt="tomato">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Tomato</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Food/tomato.png" alt="tomato">
+                            </div>
+                            <div class="card-space-title">Помидор</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
+        </main>
 
-        </div>
-    </main>
+        <!-- ANIMALS -->
+
+        <main class="main-container" id="animals">
+            <div class="conteiner">
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Animal/tiger.svg" alt="tiger">
+                            </div>
+                            <div class="card-info">
+                                <a href="#"></a>
+                                <img class="img-sound" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Tiger</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Animal/tiger.svg" alt="tiger">
+                            </div>
+                            <div class="card-space-title">Тигр</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Animal/cat.png" alt="cat">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Cat</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Animal/cat.png" alt="cat">
+                            </div>
+                            <div class="card-space-title">Кот</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Animal/crocodile.png" alt="crocodile">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Crocodile</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Animal/crocodile.png" alt="crocodile">
+                            </div>
+                            <div class="card-space-title">Крокодил</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Animal/fox.png" alt="fox">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Fox</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Animal/fox.png" alt="fox">
+                            </div>
+                            <div class="card-space-title">Лиса</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Animal/pig.svg" alt="pig">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Pig</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Animal/pig.svg" alt="pig">
+                            </div>
+                            <div class="card-space-title">Свинья</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Animal/hippo.svg" alt="hippo">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Hippo</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Animal/hippo.svg" alt="hippo">
+                            </div>
+                            <div class="card-space-title">Бегемот</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Animal/lion.png" alt="lion">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Lion</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Animal/lion.png" alt="lion">
+                            </div>
+                            <div class="card-space-title">Лев</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Animal/lemur.png" alt="lemur">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Lemur</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Animal/lemur.png" alt="lemur">
+                            </div>
+                            <div class="card-space-title">Лемур</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Body -->
+
+        <main class="main-container" id="body">
+            <div class="conteiner">
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Body/leg.png" alt="leg">
+                            </div>
+                            <div class="card-info">
+                                <a href="#"></a>
+                                <img class="img-sound" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Leg</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Body/leg.png" alt="leg">
+                            </div>
+                            <div class="card-space-title">Нога</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Body/neck.png" alt="neck">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Neck</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Body/neck.png" alt="neck">
+                            </div>
+                            <div class="card-space-title">Шея</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Body/eye.png" alt="eye">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Eye</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Body/eye.png" alt="eye">
+                            </div>
+                            <div class="card-space-title">Глаз</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Body/ear.png" alt="ear">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Ear</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Body/ear.png" alt="ear">
+                            </div>
+                            <div class="card-space-title">Ухо</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Body/hand.png" alt="hand">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Hand</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Body/hand.png" alt="hand">
+                            </div>
+                            <div class="card-space-title">Рука</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Body/tooth.svg" alt="tooth">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Tooth</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Body/tooth.svg" alt="tooth">
+                            </div>
+                            <div class="card-space-title">Зуб</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Body/nose.png" alt="nose">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Nose</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Body/nose.png" alt="nose">
+                            </div>
+                            <div class="card-space-title">Нос</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Body/head.png" alt="head">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Head</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Body/head.png" alt="head">
+                            </div>
+                            <div class="card-space-title">Голова</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- activities -->
+
+        <main class="main-container" id="activities" >
+            <div class="conteiner">
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Activities/run.png" alt="run">
+                            </div>
+                            <div class="card-info">
+                                <a href="#"></a>
+                                <img class="img-sound" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Run</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Activities/run.png" alt="run">
+                            </div>
+                            <div class="card-space-title">Бег</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Activities/dance.png" alt="dance">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Dance</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Activities/dance.png" alt="dance">
+                            </div>
+                            <div class="card-space-title">Танцевать</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Activities/jumping-rope.png" alt="jump">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Jump</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Activities/jumping-rope.png" alt="jump">
+                            </div>
+                            <div class="card-space-title">Прыгать</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Activities/draw.svg" alt="draw">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Draw</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Activities/draw.svg" alt="draw">
+                            </div>
+                            <div class="card-space-title">Рисовать</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Activities/playtime.png" alt="play">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Play</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Activities/playtime.png" alt="play">
+                            </div>
+                            <div class="card-space-title">Играть</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Activities/swimmer.png" alt="swim">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Swim</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Activities/swimmer.png" alt="swim">
+                            </div>
+                            <div class="card-space-title">Плавать</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Activities/teacher.png" alt="teacher">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Teacher</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Activities/teacher.png" alt="teacher">
+                            </div>
+                            <div class="card-space-title">Учить</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Activities/reading-book.png" alt="read">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Read</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Activities/reading-book.png" alt="read">
+                            </div>
+                            <div class="card-space-title">Читать</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- colors -->
+
+        <main class="main-container" id="colors">
+            <div class="conteiner">
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Colors/black.svg" alt="black">
+                            </div>
+                            <div class="card-info">
+                                <a href="#"></a>
+                                <img class="img-sound" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Black</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Colors/black.svg" alt="black">
+                            </div>
+                            <div class="card-space-title">Черный</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Colors/blue.svg" alt="blue">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Blue</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Colors/blue.svg" alt="blue">
+                            </div>
+                            <div class="card-space-title">Голубой</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Colors/green.svg" alt="green">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Green</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Colors/green.svg" alt="green">
+                            </div>
+                            <div class="card-space-title">Зеленый</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Colors/orange.svg" alt="orange">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Orange</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Colors/orange.svg" alt="orange">
+                            </div>
+                            <div class="card-space-title">Оранжевый</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Colors/purple.svg" alt="purple">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Purple</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Colors/purple.svg" alt="purple">
+                            </div>
+                            <div class="card-space-title">Фиолетовый</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Colors/red.svg" alt="red">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Red</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Colors/red.svg" alt="red">
+                            </div>
+                            <div class="card-space-title">Красный</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Colors/white.svg" alt="white">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">White</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Colors/white.svg" alt="white">
+                            </div>
+                            <div class="card-space-title">Белый</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Colors/yellow.svg" alt="yellow">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Yellow</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Colors/yellow.svg" alt="yellow">
+                            </div>
+                            <div class="card-space-title">Желтый</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Family -->
+
+        <main class="main-container" id="family">
+            <div class="conteiner">
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Family/family.png" alt="family">
+                            </div>
+                            <div class="card-info">
+                                <a href="#"></a>
+                                <img class="img-sound" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Family</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Family/family.png" alt="family">
+                            </div>
+                            <div class="card-space-title">Семья</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Family/father.png" alt="father">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Father</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Family/father.png" alt="father">
+                            </div>
+                            <div class="card-space-title">Отец</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Family/mother.png" alt="mother">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Mother</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Family/mother.png" alt="mother">
+                            </div>
+                            <div class="card-space-title">Мать</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Family/man.png" alt="brother">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Brother</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Family/man.png" alt="brother">
+                            </div>
+                            <div class="card-space-title">Брат</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Family/sister.png" alt="sister">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Sister</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Family/sister.png" alt="sister">
+                            </div>
+                            <div class="card-space-title">Сестра</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Family/grandfather.png" alt="grandfather">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Grandfather</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Family/grandfather.png" alt="grandfather">
+                            </div>
+                            <div class="card-space-title">Дед</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Family/grandmother.png" alt="grandmother">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Grandmother</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Family/grandmother.png" alt="grandmother">
+                            </div>
+                            <div class="card-space-title">Бабушка</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Family/pets.png" alt="pets">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Pet</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Family/pets.png" alt="pets">
+                            </div>
+                            <div class="card-space-title">Питомец</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Home -->
+
+        <main class="main-container" id="home">
+            <div class="conteiner">
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Home/bed.png" alt="bed">
+                            </div>
+                            <div class="card-info">
+                                <a href="#"></a>
+                                <img class="img-sound" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Bed</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Home/bed.png" alt="bed">
+                            </div>
+                            <div class="card-space-title">Кровать</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Home/ctable.png" alt="table">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Table</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Home/ctable.png" alt="table">
+                            </div>
+                            <div class="card-space-title">Стол</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Home/bath.png" alt="bath">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Bath</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Home/bath.png" alt="bath">
+                            </div>
+                            <div class="card-space-title">Ванна</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Home/door.png" alt="door">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Door</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Home/door.png" alt="door">
+                            </div>
+                            <div class="card-space-title">Дверь</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Home/fridge.png" alt="fridge">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Fridge</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Home/fridge.png" alt="fridge">
+                            </div>
+                            <div class="card-space-title">Холодильник</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Home/miror.png" alt="miror">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Miror</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Home/miror.png" alt="gramirorndfather">
+                            </div>
+                            <div class="card-space-title">Зеркало</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Home/toilet.png" alt="toilet">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Toilet</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Home/toilet.png" alt="toilet">
+                            </div>
+                            <div class="card-space-title">Туалет</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards-category">
+                    <div class="card">
+                        <div class="card-face">
+                            <div class="card-space-image" >
+                                <img src="./img/Home/window.png" alt="window">
+                            </div>
+                            <div class="card-info">
+                                <img class="img-refresh" src="./img/sound.png" alt="sound">
+                                <div class="card-space-title">Window</div>
+                                <a class="refresh-a" href="#"><img class="img-refresh" src="./img/refresh.png" alt="refresh"></a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-space-image" >
+                                <img src="./img/Home/window.png" alt="window">
+                            </div>
+                            <div class="card-space-title">Окно</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-    <script src="./js/js.js"></script>
-</body>
+        <script src="./js/app.js"></script>
+    </body>
 </html>
