@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-
+    const body = document.querySelector('.body');
     const menu = document.querySelector('.menu');
     const menuItem = document.querySelectorAll('.menu-item');
     const burger = document.querySelector('.navigation-burger');
@@ -8,16 +8,21 @@ window.addEventListener('DOMContentLoaded', () => {
     const blockCategory = document.querySelectorAll('.main-container');
     const link = document.querySelectorAll('.menu-link');
     const cardlink = document.querySelectorAll('.card-link');
-    
+    const mainContainer = document.querySelector('.main-container');
     const containerCards = document.querySelectorAll('.container-cards');
-    // const newPage = document.querySelectorAll('.')
+    
 
 
-    burger.addEventListener('click', () => {
+    function showBurger() {
         menu.classList.toggle('show');
         burgerItem.classList.toggle('active');
-        // document.body.style.overflow = 'hidden';
+        document.body.classList.toggle('show');
+    }
+
+    burger.addEventListener('click', () => {
+        showBurger();
     });
+   
 
 
     function hideContent() {
@@ -40,17 +45,10 @@ window.addEventListener('DOMContentLoaded', () => {
     showContent();
 
 
-    // menuItem.forEach((item, i) => {
-    //     item.addEventListener('click', () => {
-    //         hideContent();
-    //         showContent(i);
-    //     });
-    // });
 
     menu.addEventListener('click', (event) => {
         const target = event.target;
-        burgerItem.classList.toggle('active');
-        menu.classList.toggle('show');
+        showBurger();
         if (target && target.classList.contains('menu-link')) {
             link.forEach((item, i) => {
                 if (target == item) {
@@ -82,7 +80,21 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    document.addEventListener('keydown', (e) => {
+        if (e.code === 'Escape') {
+            burgerItem.classList.toggle('active');
+            menu.classList.toggle('show');
+        }
+    });
 
+    mainContainer.addEventListener('click', (e) => {
+        if (e.target === body) {
+            menu.classList.toggle('show');
+            burgerItem.classList.toggle('active');
+            console.log('asda');
+        }
+    });
+    
 
     
 });
@@ -100,9 +112,9 @@ const soundBtn = document.querySelector('.img-sound');
 
 let sound = new Audio();
 
-sound.src = '/sound/space/moon.mp3';
+sound.src = '/sound/space/bird.mp3';
 
-sound.addEventListener('click', () => {
+soundBtn.addEventListener('click', () => {
     sound.play();
 });
 

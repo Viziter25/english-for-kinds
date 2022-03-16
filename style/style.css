@@ -2,6 +2,11 @@ body {
     background: rgb(138, 138, 228);
 }
 
+body.show {
+    overflow: hidden;
+}
+
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -22,7 +27,7 @@ body {
 }
 
 .main-container {
-    width: 85vw;
+    width: 90vw;
     margin: 0 auto;
     margin-top: 20px;
     max-width: 1399px;
