@@ -99,7 +99,7 @@ a {
 .card-title {
     font-size: 1.8rem;
     text-transform: uppercase;
-    font-family: 'Lobster';
+    font-family: 'Righteous', cursive;
     letter-spacing: 0.15em;
     text-align: center;
     margin-bottom: 11px;
@@ -192,6 +192,7 @@ a {
 /* -------------burger */
 
 .menu {
+        
         display: none;
         flex-direction: column;
         box-sizing: border-box;
@@ -214,6 +215,7 @@ a {
 }
 
 ul {
+    
     padding-top: 80px;
 }
 
@@ -227,6 +229,7 @@ ul {
     
 
 .menu-link {
+    
     color: #ffffff;
     font-family: 'Inter', Verdana,sans-serif;
     font-size: 1.4rem;
@@ -332,7 +335,6 @@ ul {
     height: 245px;
     margin-bottom: 30px;
     margin-right: 30px;
-
     perspective: 1000px;
 }
 
@@ -407,7 +409,7 @@ ul {
 .card-space-title {
      font-size: 1.5rem;
      text-transform: uppercase;
-     font-family: 'Lobster';
+     font-family: 'Righteous', cursive;
      letter-spacing: 0.15em;
      text-align: center;
      margin-bottom: 8px;

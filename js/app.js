@@ -108,15 +108,8 @@ const refresh = document.querySelectorAll('.refresh-a');
 const card = document.querySelector('.card');
 const cardFace = document.querySelector('.card-face');
 const cardBack = document.querySelectorAll('.card-back');
-const soundBtn = document.querySelector('.img-sound');
+const soundBtn = document.querySelectorAll('.img-sound');
 
-let sound = new Audio();
-
-sound.src = '/sound/space/bird.mp3';
-
-soundBtn.addEventListener('click', () => {
-    sound.play();
-});
 
 refresh.forEach((item) => {
     item.addEventListener('click', (event) => {
@@ -143,4 +136,16 @@ cardBack.forEach((item) => {
 
 
 
-  
+// ///////////////////sound
+
+
+
+soundBtn.forEach((element, i) => {
+    console.log(element.id);
+    let sound = new Audio();
+    sound.src = `/sound/${element.id}.mp3`;
+    element.addEventListener('click', () => {
+        sound.play();
+    });
+});
+
