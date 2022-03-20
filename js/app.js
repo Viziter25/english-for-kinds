@@ -71,7 +71,6 @@ window.addEventListener('DOMContentLoaded', () => {
                }
             });
             blockCategory.forEach((block) => {
-            
                 if (item.dataset.id == block.id) {
                     block.style.display ='block';
                     
@@ -141,9 +140,8 @@ cardBack.forEach((item) => {
 
 
 soundBtn.forEach((element, i) => {
-    console.log(element.id);
     let sound = new Audio();
-    sound.src = `/sound/${element.id}.mp3`;
+    sound.src = `./sound/${element.id}.mp3`;
     element.addEventListener('click', () => {
         sound.play();
     });

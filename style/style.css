@@ -369,6 +369,7 @@ ul {
     transition: 1s;
     backface-visibility: hidden;
     position: absolute;
+    font-family: 'Righteous', cursive;
 }
 
 
