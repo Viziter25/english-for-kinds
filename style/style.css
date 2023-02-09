@@ -238,6 +238,17 @@ ul {
     cursor: pointer;
 }
 
+.menu-link:hover {
+    line-height: 2rem;
+    background: #6aa2e2;
+    padding: 4px 15px;
+    border-radius: 20px;
+    margin-left: -20px;
+    box-shadow: -1px 3px 0px #4a3d82;
+    animation-duration: 1s;
+}
+
+
 .menu-item.active a {
     font-size: 1.5rem;
     line-height: 3.1rem;
@@ -427,3 +438,35 @@ ul {
     height: 25px;
     margin-bottom: 5px;
 }
+
+
+
+.input-start {
+    position: absolute;
+    top: 45%;
+    left: 88%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #12ce2b;
+    color: white;
+    font-size: 16px;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    font-family: "Lato";
+    text-transform: uppercase;
+    font-size: 14px;
+    box-shadow: 0 5px #999;
+};
+
+.input-start:hover {
+    background-color: #3e8e41;
+}
+
+/* .input-start:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(1px);
+} */

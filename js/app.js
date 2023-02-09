@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const blockCategory = document.querySelectorAll('.main-container');
     const link = document.querySelectorAll('.menu-link');
     const cardlink = document.querySelectorAll('.card-link');
-    const mainContainer = document.querySelector('.main-container');
+    const mainContainer = document.querySelectorAll('.main-container');
     const containerCards = document.querySelectorAll('.container-cards');
     
 
@@ -86,14 +86,15 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    mainContainer.addEventListener('click', (e) => {
-        if (e.target === body) {
-            menu.classList.toggle('show');
-            burgerItem.classList.toggle('active');
-            console.log('asda');
-        }
+    mainContainer.forEach(element => {
+        element.addEventListener('click', (e) => {
+            if (e.target === body) {
+                menu.classList.toggle('show');
+                burgerItem.classList.toggle('active');
+                console.log('asda');
+            }
+        });
     });
-    
 
     
 });
@@ -145,5 +146,74 @@ soundBtn.forEach((element, i) => {
     element.addEventListener('click', () => {
         sound.play();
     });
+});
+
+
+
+///// checkbox 
+
+const checkboxGame = document.querySelector('#switch-input');
+const cardInfo = document.querySelectorAll('.card-info');
+const ImgGame = document.querySelectorAll('.card-space-image img');
+const conteiner = document.querySelectorAll('.conteiner');
+
+const startGame = document.createElement('button');
+startGame.classList.add('input-start');
+startGame.innerHTML = 'Start';
+
+let arrSpace = ['/sound/rocket.mp3', '/sound/astronaut.mp3', '/sound/alien.mp3', '/sound/earth.mp3'];
+
+
+
+startGame.addEventListener('click', () => {
+    function randomSing (arr) {
+        arr.sort(() => Math.random() - 0.5);
+    }
+
+    randomSing(arrSpace);
+    arrSpace.forEach(e => {
+        let soundGame = new Audio();
+        soundGame.src = e;
+        soundGame.play();
+    });
+    
+});
+
+
+
+
+
+
+
+checkboxGame.addEventListener('click', () => {
+    if (checkboxGame.checked) {
+        
+        
+        conteiner.forEach( element => {
+            document.body.prepend(startGame); 
+        });
+        
+
+        document.body.style.background = 'rgb(192 234 112)';
+
+        cardInfo.forEach(element => {
+            element.style.display = 'none';
+        });
+
+        ImgGame.forEach(element => {
+            element.style.cssText = 'width: 200px; left: 20px; top: 22px;';
+        });
+
+    } else {
+        document.body.style.background = '';
+        startGame.remove();
+        cardInfo.forEach(element => {
+            element.style.display = '';
+        });
+
+        ImgGame.forEach(element => {
+            element.style.cssText = '';
+        });
+    }
 });
 
